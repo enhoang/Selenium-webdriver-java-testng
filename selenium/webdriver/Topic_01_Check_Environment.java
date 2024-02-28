@@ -19,12 +19,12 @@ public class Topic_01_Check_Environment {
     @BeforeClass
     public void beforeClass() {
         if (osName.contains("Windows")) {
-            System.setProperty("webdriver.firefox.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+            System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
         } else {
-            System.setProperty("webdriver.firefox.driver", projectPath + "/browserDrivers/gecko");
+            System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chrome");
         }
 
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("https://www.facebook.com/");

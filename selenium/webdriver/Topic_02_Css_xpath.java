@@ -9,7 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import javax.print.DocFlavor;
+
 import java.util.concurrent.TimeUnit;
 
 public class Topic_02_Css_xpath {
@@ -135,7 +135,7 @@ public class Topic_02_Css_xpath {
     }
 
     @Test
-    public void TC_04_Register_with_incorrect_confirm_password() {
+    public void TC_05_Register_with_incorrect_confirm_password() {
         ///Input Name
         WebElement Input_name = driver.findElement(By.cssSelector("#txtFirstname"));
         Input_name.clear();
@@ -168,7 +168,7 @@ public class Topic_02_Css_xpath {
     }
 
     @Test
-    public void TC_04_Register_with_invalid_phone() {
+    public void TC_06_Register_with_invalid_phone() {
         ///Input Name
         WebElement Input_name = driver.findElement(By.cssSelector("#txtFirstname"));
         Input_name.clear();
